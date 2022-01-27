@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna Chandra :: UI/UX</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+<!--     
+    <i class="gg-bolt"></i> -->
+    <div class="header">
+    <div class="navbar">
+        <div class="icon">
+            <span>Purna</span> &nbsp;<i class="gg-bolt"></i>   
+            
+        </div>
+        <div>
+            <hr class="lo_hr">
+        </div>
+        <!-- <div id="toggle_items"> -->
+        <div class="navitems">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about_sec">About</a></li>
+                <li><a href="#work_sec">Works</a></li>
+            </ul>
+        </div>
+        <div class="navitems">
+            <button>Hire Me</button>
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="toggle" id="toggle_click">
+                <div class="item1_i"></div>
+                <div class="item1_i"></div>
+                <div class="item1_i"></div>
+            </div>
+            
+        </div>
+    <section>
+        <div class="container">
+            <div class="text_p">
+                <h2>Hi There!</h2>
+                <h1>I'm a <span style="color: royalblue;">Graphic</span> Designer</h1>
+                <p class="abtu">
+                   I'm a UI/UX designer and developer based in jharkhand,India.I strives to build immpresive and beautiful web applications through carefully crafted code and user-centric design. 
+                </p>
+                <div class="btn_sec">
+                    <button class="btn_m" id="btn_work">Works</button>
+                    <a href="#about_sec" class="links_m">More about me</a>
+                </div>
+            </div>
+            
+            <div class="img_1">
+                <img src="img/svg1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="about_me" id="about_sec">
+        <h1 class="h1_a">About me</h1>
+        <hr>
+        <h3>I <span style="color: royalblue;">Design</span> & <span style="color: royalblue;">Art</span> Beautiful Things,& I Love What I Do.</h3>
+        <div class="abtn_me">
+        <div >
+            
+            <img src="img/svg2.svg" class="img_2" alt="">
+            
+        </div>
+        <div class="context_abt">
+            <h2 style="padding-left: 0px; font-weight: 700;">Why hire me for your next project?</h2>
+            <p>
+                I'm Purna Chandra Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+            </p>
+            <p>
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual on meaningful content.
+            </p>
+            <div style="padding-top: 1rem;">
+                <button style="background-color: black;color: white;">Learn More</button>
+                <button style="margin-left: 1em;">Download CV</button>
+            </div>
+
+        </div>
+</div>
+    </div>
+
+    <div class="work" id="work_sec">
+         <h1 class="h1_a">Works</h1>
+        <hr>
+        <h3>My <span style="color: royalblue;">Graphic</span> & <span style="color: royalblue;">Art</span> works that may inspire you.</h3>
+       
+        <div class="grid_img">
+            <div class="item_box"><img src="img/1.jpg" class="img_res" alt=""></div>
+            <div class="item_box"><img src="img/2.png" class="img_res" alt=""></div>
+            <div class="item_box"><img src="img/3.jpg" class="img_res" alt=""></div>
+            <div class="item_box"><img src="img/4.png" class="img_res" alt=""></div>
+            <div class="item_box"><img src="img/5.png" class="img_res" alt=""></div>
+            <div class="item_box"><img src="img/6.png" class="img_res" alt=""></div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <h4>Made with ❤️ and design & develop by purna <i class="gg-bolt" style="display: inline-block;"></i>.</h4>
+        <span>© Copyright 2022 India.</span>
+    </div>
+    <!-- <div>
+        &nbsp;
+    </div> -->
+<div class="visi">
+    <div class="bottom_menu">
+        <div class="item_m">
+            <div>
+            <i class="gg-home" ></i>
+            </div>
+            
+        </div>
+        <div class="item_m">
+            <i class="gg-info"></i>
+        </div>
+        <div class="item_m">
+            <i class="gg-image"></i>
+        </div>
+    </div>
+</div>
+    <script>
+        var btn_work = document.getElementById("btn_work");
+        btn_work.addEventListener("click",()=>{
+           document.getElementById("work_sec").scrollIntoView({behavior: 'smooth'});
+        })
+        var items = document.getElementsByClassName("visi")[0];
+        var toggle1 = document.getElementById("toggle_click");
+        toggle1.addEventListener("click",()=>{
+            items.classList.toggle("show");
+
+        });
+        
+    </script>
+    
+</body>
+</html>
